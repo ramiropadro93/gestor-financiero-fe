@@ -61,10 +61,7 @@ const CrearMovimientoForm = () => {
             Medio: medio,
         };
 
-        console.log('body: ', body);
-
         const Result = await AddOrUpdateMovimiento(body);
-        console.log('Result: ', Result);
 
         if (Result) router.push('/SituacionFinanciera');
     };
